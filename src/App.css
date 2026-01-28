@@ -1,0 +1,144 @@
+/* Import Font Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+
+:root {
+  --primary-color: #006d75; /* Deep Teal - Màu y tế chuyên nghiệp */
+  --accent-color: #13c2c2;
+  --bg-color: #f0f2f5;
+  --text-primary: #262626;
+  --card-radius: 12px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+/* Layout Overrides */
+.site-header {
+  background: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  z-index: 10;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.site-layout-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Custom Medical Card Styling */
+.medical-card {
+  border-radius: var(--card-radius) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: none !important;
+}
+
+.medical-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.medical-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: #fff;
+  min-height: 56px;
+}
+
+.medical-card .ant-card-head-title {
+  color: var(--primary-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Markdown Content Styling - Medical Report Style */
+.markdown-content {
+  font-size: 15px;
+  line-height: 1.8; /* Tăng khoảng cách dòng để dễ đọc */
+  color: #333;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  color: var(--primary-color);
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  font-weight: 700;
+}
+
+.markdown-content h1 {
+  font-size: 24px;
+  border-bottom: 2px solid #e6fffb;
+  padding-bottom: 8px;
+}
+.markdown-content h2 {
+  font-size: 20px;
+}
+.markdown-content h3 {
+  font-size: 18px;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.markdown-content li {
+  margin-bottom: 8px;
+}
+
+.markdown-content strong {
+  color: #003a3f; /* Darker teal for emphasis */
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid var(--accent-color);
+  background: #e6fffb;
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #555;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown-content th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+.markdown-content th strong {
+  font-weight: 600;
+  color: white;
+}
+.markdown-content td {
+  border: 1px solid #e8e8e8;
+  padding: 12px;
+}
+
+.markdown-content tr:nth-child(even) {
+  background-color: #fafafa;
+}
+.markdown-content tr:hover {
+  background-color: #f1f1f1;
+}
+.markdown-content a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
